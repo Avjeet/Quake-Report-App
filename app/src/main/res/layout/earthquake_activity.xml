@@ -13,6 +13,27 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    >
+   <ImageView
+       android:id="@+id/noInternet"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:src="@drawable/no_internet_connection"
+       />
+
+
+   <ProgressBar
+       android:id="@+id/progressBar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:progressDrawable="@drawable/progress_custom"
+       android:layout_gravity="center"
+       android:visibility="gone"
+       />
 <!-- Layout for a list of earthquakes -->
 <ListView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/list"
@@ -20,6 +41,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minHeight="@dimen/minHeight"
-    android:divider="@null"
-    android:dividerHeight="0dp"
+    android:divider="@android:drawable/divider_horizontal_dim_dark"
+    android:dividerHeight="5dp"
+    android:paddingTop="12dp"
+    android:visibility="gone"
     />
+</FrameLayout>

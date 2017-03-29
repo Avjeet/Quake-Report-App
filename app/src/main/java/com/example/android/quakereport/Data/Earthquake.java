@@ -1,4 +1,4 @@
-package com.example.android.quakereport;
+package com.example.android.quakereport.Data;
 
 /**
  * Created by AVJEET on 02-02-2017.
@@ -13,7 +13,7 @@ public class Earthquake {
     private Double MagnitudeDouble;
     private String mUrl;
 
-    Earthquake(String locOff,String loc, String mag, Double magD,String date,String time,String url){
+    public Earthquake(String locOff, String loc, String mag, Double magD, String date, String time, String url){
         mLocationOffset=locOff;
         mLocation=loc;
         mMagnitude=mag;

@@ -9,18 +9,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
+import com.example.android.quakereport.Data.Earthquake;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by AVJEET on 02-02-2017.
  */
 
 public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
-    ViewHolder viewHolder=null;
-    Context mContext;
+    private ViewHolder viewHolder=null;
+    private Context mContext;
 
-    EarthquakeAdapter(Activity context,ArrayList<Earthquake> data){
+    EarthquakeAdapter(Activity context, List<Earthquake> data){
         super(context,0,data);
         mContext=context;
     }
